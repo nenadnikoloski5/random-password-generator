@@ -1,0 +1,212 @@
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Random Password Generator - Nenad</title>
+    <link rel="stylesheet" href="./css/css.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+
+
+
+    <div class="wrap">
+        <nav id="w0" class="rwd_navbar navbar-fixed-top navbar">
+            <div class="container">
+                <div class="navbar-header"><a class="navbar-brand">Random Password Generator</a></div>
+               
+            </div>
+        </nav>
+        <div class="content_container">
+            <div class="text-center">
+            </div>
+            <div class="form_block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div id="options">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="2" id="specialChars">
+                                                <input type="hidden" name="rand_id" value="66">
+                                                <input type="submit" name="submit" class="btn btn-primary" value=" Generate Random Password ">
+                                            </td>
+                                        </tr>
+                                       
+                                        <tr>
+                                            <td>
+                                                <label>Length of Password:</label>
+
+                                            </td>
+                                            <td>
+                                                <input type="number" name="char-qty" value="8" class="form-control input-sm" >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" checked="" id="capital-letters" class="password-chars">
+                                                <label for="capital-letters">Capital letters</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" checked id="lowercase-letters" class="password-chars">
+                                                <label for="lowercase-letters">Lowercase letters</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" checked="" id="numbers" class="password-chars">
+                                                <label for="numbers">Numbers</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                
+                                                <div class="well" id="special-chars-container">
+                                                    <ul>
+                                                        <li><input type="checkbox" checked="" id="special-chars-1" class="special-chars">
+                                                            <label for="special-chars-1">.</label>
+                                                        </li>
+                                                        <li><input type="checkbox" checked="" id="special-chars-2" class="special-chars">
+                                                            <label for="special-chars-2">,</label>
+                                                        </li>
+                                                        <li><input type="checkbox" checked="" id="special-chars-3" class="special-chars">
+                                                            <label for="special-chars-3">:</label>
+                                                        </li>
+                                                        <li><input type="checkbox" checked="" id="special-chars-4" class="special-chars">
+                                                            <label for="special-chars-4">;</label>
+                                                        </li>
+                                                        <li><input type="checkbox" checked="" id="special-chars-5" class="special-chars">
+                                                            <label for="special-chars-5">'</label>
+                                                        </li>
+                                                        <li><input type="checkbox" checked="" id="special-chars-6" class="special-chars">
+                                                            <label for="special-chars-6">"</label>
+                                                        </li>
+                                                        <li><input type="checkbox" checked="" id="special-chars-7" class="special-chars">
+                                                            <label for="special-chars-7">`</label>
+                                                        </li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li><input type="checkbox" checked="" id="special-chars-8" class="special-chars">
+                                                            <label for="special-chars-8">&gt;</label>
+                                                        </li>
+                                                        <li><input type="checkbox" checked="" id="special-chars-9" class="special-chars">
+                                                            <label for="special-chars-9">&lt;</label>
+                                                        </li>
+                                                        <li><input type="checkbox" checked="" id="special-chars-10" class="special-chars">
+                                                            <label for="special-chars-10">]</label>
+                                                        </li>
+                                                        <li><input type="checkbox" checked="" id="special-chars-11" class="special-chars">
+                                                            <label for="special-chars-11">[</label>
+                                                        </li>
+                                                        <li><input type="checkbox" checked="" id="special-chars-12" class="special-chars">
+                                                            <label for="special-chars-12">}</label>
+                                                        </li>
+                                                        <li><input type="checkbox" checked="" id="special-chars-13" class="special-chars">
+                                                            <label for="special-chars-13">{</label>
+                                                        </li>
+                                                        <li><input type="checkbox" checked="" id="special-chars-14" class="special-chars">
+                                                            <label for="special-chars-14">_</label>
+                                                        </li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li><input type="checkbox" checked="" id="special-chars-15" class="special-chars">
+                                                            <label for="special-chars-15">/</label>
+                                                        </li>
+                                                        <li><input type="checkbox" checked="" id="special-chars-16" class="special-chars">
+                                                            <label for="special-chars-16">\</label>
+                                                        </li>
+                                                        <li><input type="checkbox" checked="" id="special-chars-17" class="special-chars">
+                                                            <label for="special-chars-17">|</label>
+                                                        </li>
+                                                        <li><input type="checkbox" checked="" id="special-chars-18" class="special-chars">
+                                                            <label for="special-chars-18">?</label>
+                                                        </li>
+                                                        <li><input type="checkbox" checked="" id="special-chars-19" class="special-chars">
+                                                            <label for="special-chars-19">)</label>
+                                                        </li>
+                                                        <li><input type="checkbox" checked="" id="special-chars-20" class="special-chars">
+                                                            <label for="special-chars-20">(</label>
+                                                        </li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li><input type="checkbox" checked="" id="special-chars-21" class="special-chars">
+                                                            <label for="special-chars-21">=</label>
+                                                        </li>
+                                                        <li><input type="checkbox" checked="" id="special-chars-22" class="special-chars">
+                                                            <label for="special-chars-22">+</label>
+                                                        </li>
+                                                        <li><input type="checkbox" checked="" id="special-chars-23" class="special-chars">
+                                                            <label for="special-chars-23">-</label>
+                                                        </li>
+                                                        <li><input type="checkbox" checked="" id="special-chars-24" class="special-chars">
+                                                            <label for="special-chars-24">*</label>
+                                                        </li>
+                                                        <li><input type="checkbox" checked="" id="special-chars-25" class="special-chars">
+                                                            <label for="special-chars-25">&amp;</label>
+                                                        </li>
+                                                        <li><input type="checkbox" checked="" id="special-chars-26" class="special-chars">
+                                                            <label for="special-chars-26">%</label>
+                                                        </li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li><input type="checkbox" checked="" id="special-chars-27" class="special-chars">
+                                                            <label for="special-chars-27">^</label>
+                                                        </li>
+                                                        <li><input type="checkbox" checked="" id="special-chars-28" class="special-chars">
+                                                            <label for="special-chars-28">$</label>
+                                                        </li>
+                                                        <li><input type="checkbox" checked="" id="special-chars-29" class="special-chars">
+                                                            <label for="special-chars-29">#</label>
+                                                        </li>
+                                                        <li><input type="checkbox" checked="" id="special-chars-30" class="special-chars">
+                                                            <label for="special-chars-30">@</label>
+                                                        </li>
+                                                        <li><input type="checkbox" checked="" id="special-chars-31" class="special-chars">
+                                                            <label for="special-chars-31">!</label>
+                                                        </li>
+                                                        <li><input type="checkbox" checked="" id="special-chars-32" class="special-chars">
+                                                            <label for="special-chars-32">~</label>
+                                                        </li>
+                                                    </ul>
+                                                    <div style="clear: both"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                       
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                            
+                            
+                        </div>
+                        <div class="col-md-7">
+                            <div id="loading_result" class="small-img-results">
+                                <ol id="result">
+                                    <li>
+                                        <div id="resultItself"> <span class="support">5gZF'29H</span></div>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
